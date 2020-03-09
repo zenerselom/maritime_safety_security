@@ -79,3 +79,6 @@ usage: ship_detection.py [-h] -m MODEL -i INPUT<br/>
                         
  file out.mp4 is created and contains the detections<br/>
 reference: https://docs.openvinotoolkit.org/latest/_demos_python_demos_object_detection_demo_yolov3_async_README.html<br/>
+To do : <br/>
+train a better model with larger dataset 
+implement realtime detection<br/>
