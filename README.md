@@ -25,17 +25,17 @@ For this project, we custom trained a YOLOV3 detection model with a six (6) clas
    yolo_v3.json<br/> 
    [<br/>
   {<br/>
-    "id": "TFYOLOV3",<br/> (<-- three spaces)
-    "match_kind": "general",<br/>(<-- three spaces)
-    "custom_attributes": {<br/>(<-- three spaces)
-      "classes": 33,<br/>(<-- six spaces)
-      "anchors": [10, 13, 16, 30, 33, 23, 30, 61, 62, 45, 59, 119, 116, 90, 156, 198, 373, 326],<br/>(<-- six spaces)
-      "coords": 4,<br/>(<-- six spaces)
-      "num": 9,<br/>(<-- six spaces)
-      "masks":[[6, 7, 8], [3, 4, 5], [0, 1, 2]],<br/>(<-- six spaces)
-      "entry_points": ["detector/yolo-v3/Reshape", "detector/yolo-v3/Reshape_4", "detector/yolo-v3/Reshape_8"]<br/>(<-- six spaces)
-    }<br/>(<-- sthree spaces)
-  }<br/>(<-- twoo spaces)
+    "id": "TFYOLOV3",<br/> 
+    "match_kind": "general",<br/>
+    "custom_attributes": {<br/>
+      "classes": 33,<br/>
+      "anchors": [10, 13, 16, 30, 33, 23, 30, 61, 62, 45, 59, 119, 116, 90, 156, 198, 373, 326],<br/>
+      "coords": 4,<br/>
+      "num": 9,<br/>
+      "masks":[[6, 7, 8], [3, 4, 5], [0, 1, 2]],<br/>
+      "entry_points": ["detector/yolo-v3/Reshape", "detector/yolo-v3/Reshape_4", "detector/yolo-v3/Reshape_8"]<br/>
+    }<br/>
+  }<br/>
 ]<br/>
    reference: https://docs.openvinotoolkit.org/latest/_docs_MO_DG_prepare_model_convert_model_tf_specific_Convert_YOLO_From_Tensorflow.html#yolov3-overview<br/>
 5. Build an inference engine app for  detection
