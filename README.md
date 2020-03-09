@@ -3,8 +3,9 @@ The worl is fueled by maritime trade and we need to ensure safety and security i
 For this project, we custom trained a YOLOV3 detection model with a six (6) classes vessel dataset available. Here are the project description:
 1. find and process a suitable dataset for our purpose: ship detection
    https://www.researchgate.net/publication/327085456_SeaShips_A_Large-Scale_Precisely-Annotated_Dataset_for_Ship_Detection
-   http://www.lmars.whu.edu.cn/prof_web/shaozhenfeng/datasets/SeaShips(7000).zip
-   two utility python scripts are used to process the dataset in yolov3 format
+   http://www.lmars.whu.edu.cn/prof_web/shaozhenfeng/datasets/SeaShips(7000).zip<br/>
+   
+    two utility python scripts are used to process the dataset in yolov3 format
        seaships.py to produce training  files 
        extract_xml.py to produce label file
   reference for training and dataset structure: https://towardsdatascience.com/training-yolo-for-object-detection-in-pytorch-with-your-custom-dataset-the-simple-way-1aa6f56cf7d9
