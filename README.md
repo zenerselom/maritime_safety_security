@@ -42,38 +42,40 @@ For this project, we custom trained a YOLOV3 detection model with a six (6) clas
 the inference was build on two files: inference.py, ship_detection.py<br/>
 ship_detection.py is build on top of yolov3 openvino demo<br/>
 usage: ship_detection.py [-h] -m MODEL -i INPUT<br/>
-&nbsp; &nbsp;  &nbsp;                  [-l CPU_EXTENSION] [-d DEVICE]<br/>
-                                       [--labels LABELS] [-t PROB_THRESHOLD]<br/>
-                                       [-iout IOU_THRESHOLD] [-ni NUMBER_ITER]<br/>
-                                       [-pc] [-r]<br/>
-Options:<br/>
-     -h, --help            Show this help message and exit.<br/>
-     -m MODEL, --model MODEL<br/>
-                        Required. Path to an .xml file with a trained model.<br/>
-  -i INPUT, --input INPUT<br/>
-                        Required. Path to an image/video file. (Specify 'cam'<br/>
-                        to work with camera)<br/>
-  -l CPU_EXTENSION, --cpu_extension CPU_EXTENSION<br/>
-                        Optional. Required for CPU custom layers. Absolute<br/>
-                        path to a shared library with the kernels<br/>
-                        implementations.<br/>
-  -d DEVICE, --device DEVICE<br/>
-                        Optional. Specify the target device to infer on; CPU,<br/>
-                        GPU, FPGA, HDDL or MYRIAD is acceptable. The sample<br/>
-                        will look for a suitable plugin for device specified.<br/>
-                        Default value is CPU<br/>
-  --labels LABELS       Optional. Labels mapping file<br/>
-  -t PROB_THRESHOLD, --prob_threshold PROB_THRESHOLD<br/>
-                        Optional. Probability threshold for detections<br/>
-                        filtering<br/>
-  -iout IOU_THRESHOLD, --iou_threshold IOU_THRESHOLD<br/>
-                        Optional. Intersection over union threshold for<br/>
-                        overlapping detections filtering<br/>
-  -ni NUMBER_ITER, --number_iter NUMBER_ITER<br/>
-                        Optional. Number of inference iterations<br/>
-  -pc, --perf_counts    Optional. Report performance counters<br/>
-  -r, --raw_output_message<br/>
-                        Optional. Output inference results raw values showing<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[-l CPU_EXTENSION] [-d DEVICE]<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[-l CPU_EXTENSION] [-d DEVICE]<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[--labels LABELS] [-t PROB_THRESHOLD]<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[-iout IOU_THRESHOLD] [-ni NUMBER_ITER]<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[-pc] [-r]<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Options:<br/>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-h, --help            Show this help message and exit.<br/>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-m MODEL, --model MODEL<br/>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                   Required. Path to an .xml file with a trained model.<br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-i INPUT, --input INPUT<br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                    Required. Path to an image/video file. (Specify 'cam'<br/>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                   to work with camera)<br/>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -l CPU_EXTENSION, --cpu_extension CPU_EXTENSION<br/>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                       Optional. Required for CPU custom layers. Absolute<br/>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                       path to a shared library with the kernels<br/>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                       implementations.<br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-d DEVICE, --device DEVICE<br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                      Optional. Specify the target device to infer on; CPU,<br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                      GPU, FPGA, HDDL or MYRIAD is acceptable. The sample<br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                      will look for a suitable plugin for device specified.<br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                      Default value is CPU<br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--labels LABELS       Optional. Labels mapping file<br/>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -t PROB_THRESHOLD, --prob_threshold PROB_THRESHOLD<br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                      Optional. Probability threshold for detections<br/>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                     filtering<br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-iout IOU_THRESHOLD, --iou_threshold IOU_THRESHOLD<br/>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                     Optional. Intersection over union threshold for<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;overlapping detections filtering<br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-ni NUMBER_ITER, --number_iter NUMBER_ITER<br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                      Optional. Number of inference iterations<br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-pc, --perf_counts    Optional. Report performance counters<br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-r, --raw_output_message<br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Optional. Output inference results raw values showing<br/>
+                       
                         
  file out.mp4 is created and contains the detections<br/>
 reference: https://docs.openvinotoolkit.org/latest/_demos_python_demos_object_detection_demo_yolov3_async_README.html<br/>
