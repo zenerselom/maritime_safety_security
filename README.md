@@ -6,16 +6,16 @@ For this project, we custom trained a YOLOV3 detection model with a six (6) clas
    http://www.lmars.whu.edu.cn/prof_web/shaozhenfeng/datasets/SeaShips(7000).zip<br/>
    
     two utility python scripts are used to process the dataset in yolov3 format<br/>
-       seaships.py to produce training  files<br/> 
-       extract_xml.py to produce label file<br/>
+       [seaships.py](https://github.com/zenerselom/maritime_safety_security/blob/master/seaships.py) to produce training  files<br/> 
+       [extract_xml.py](https://github.com/zenerselom/maritime_safety_security/blob/master/extract_xml.py) to produce label file<br/>
   reference for training and dataset structure: https://towardsdatascience.com/training-yolo-for-object-detection-in-pytorch-with-your-custom-dataset-the-simple-way-1aa6f56cf7d9<br/>
                           
 2. Custom trained YOLOV3  model on our dataset with pytorch
-   For this purpose colab jupyter notebook was used: seaship_custom_train.ipynb
+   For this purpose colab jupyter notebook was used: [seaship_custom_train.ipynb](https://github.com/zenerselom/maritime_safety_security/blob/master/seaship_custom_train.ipynb)
    you have to provide your own google drive storage with all the files<br/>
    reference:https://github.com/cfotache/pytorch_custom_yolo_training.git<br/>
 3. Convert model to Tensorflow 
-   for this purpose, colab jupyter notebook was used: convert_tensorflow.ipynb<br/>
+   for this purpose, colab jupyter notebook was used: [convert_tensorflow.ipynb](https://github.com/zenerselom/maritime_safety_security/blob/master/convert_tensorflow.ipynb)<br/>
    reference: https://github.com/mystic123/tensorflow-yolo-v3.git<br/>
 4. Convert model to Intermediate representation (IR) with model optimizer<br/>
     python3 mo_tf.py<br/>
@@ -41,7 +41,7 @@ For this project, we custom trained a YOLOV3 detection model with a six (6) clas
 link for IR models : https://drive.google.com/open?id=1M1Zb3N6K_sh-lCmEJqj0Hp740xby0jet<br/>
 
 5. Build an inference engine app for  detection<br/>
-the inference was build on two files: inference.py, ship_detection.py<br/>
+the inference was build on two files: [inference.py](https://github.com/zenerselom/maritime_safety_security/blob/master/inference.py), [ship_detection.py](https://github.com/zenerselom/maritime_safety_security/blob/master/ship_detection.py)<br/>
 ship_detection.py is build on top of yolov3 openvino demo<br/>
 usage: ship_detection.py [-h] -m MODEL -i INPUT<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[-l CPU_EXTENSION] [-d DEVICE]<br/>
