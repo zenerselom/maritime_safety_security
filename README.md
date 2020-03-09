@@ -24,56 +24,56 @@ For this project, we custom trained a YOLOV3 detection model with a six (6) clas
                      --batch 1<br/>
    yolo_v3.json<br/> 
    [<br/>
-  {<br/>
-    "id": "TFYOLOV3",<br/> 
-    "match_kind": "general",<br/>
-    "custom_attributes": {<br/>
-      "classes": 33,<br/>
-      "anchors": [10, 13, 16, 30, 33, 23, 30, 61, 62, 45, 59, 119, 116, 90, 156, 198, 373, 326],<br/>
-      "coords": 4,<br/>
-      "num": 9,<br/>
-      "masks":[[6, 7, 8], [3, 4, 5], [0, 1, 2]],<br/>
-      "entry_points": ["detector/yolo-v3/Reshape", "detector/yolo-v3/Reshape_4", "detector/yolo-v3/Reshape_8"]<br/>
-    }<br/>
-  }<br/>
+  &nbsp;&nbsp;&nbsp;{<br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"id": "TFYOLOV3",<br/> 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"match_kind": "general",<br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"custom_attributes": {<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"classes": 33,<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"anchors": [10, 13, 16, 30, 33, 23, 30, 61, 62, 45, 59, 119, 116, 90, 156, 198, 373, 326],<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"coords": 4,<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"num": 9,<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"masks":[[6, 7, 8], [3, 4, 5], [0, 1, 2]],<br/>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "entry_points": ["detector/yolo-v3/Reshape", "detector/yolo-v3/Reshape_4", "detector/yolo-v3/Reshape_8"]<br/>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br/>
+  &nbsp;&nbsp;&nbsp;}<br/>
 ]<br/>
    reference: https://docs.openvinotoolkit.org/latest/_docs_MO_DG_prepare_model_convert_model_tf_specific_Convert_YOLO_From_Tensorflow.html#yolov3-overview<br/>
-5. Build an inference engine app for  detection
-the inference was build on two files: inference.py, ship_detection.py
-ship_detection.py is build on top of yolov3 openvino demo
-usage: ship_detection.py [-h] -m MODEL -i INPUT
-                                       [-l CPU_EXTENSION] [-d DEVICE]
-                                       [--labels LABELS] [-t PROB_THRESHOLD]
-                                       [-iout IOU_THRESHOLD] [-ni NUMBER_ITER]
-                                       [-pc] [-r]
-Options:
-  -h, --help            Show this help message and exit.
-  -m MODEL, --model MODEL
-                        Required. Path to an .xml file with a trained model.
-  -i INPUT, --input INPUT
-                        Required. Path to an image/video file. (Specify 'cam'
-                        to work with camera)
-  -l CPU_EXTENSION, --cpu_extension CPU_EXTENSION
-                        Optional. Required for CPU custom layers. Absolute
-                        path to a shared library with the kernels
-                        implementations.
-  -d DEVICE, --device DEVICE
-                        Optional. Specify the target device to infer on; CPU,
-                        GPU, FPGA, HDDL or MYRIAD is acceptable. The sample
-                        will look for a suitable plugin for device specified.
-                        Default value is CPU
-  --labels LABELS       Optional. Labels mapping file
-  -t PROB_THRESHOLD, --prob_threshold PROB_THRESHOLD
-                        Optional. Probability threshold for detections
-                        filtering
-  -iout IOU_THRESHOLD, --iou_threshold IOU_THRESHOLD
-                        Optional. Intersection over union threshold for
-                        overlapping detections filtering
-  -ni NUMBER_ITER, --number_iter NUMBER_ITER
-                        Optional. Number of inference iterations
-  -pc, --perf_counts    Optional. Report performance counters
-  -r, --raw_output_message
-                        Optional. Output inference results raw values showing
+5. Build an inference engine app for  detection<br/>
+the inference was build on two files: inference.py, ship_detection.py<br/>
+ship_detection.py is build on top of yolov3 openvino demo<br/>
+usage: ship_detection.py [-h] -m MODEL -i INPUT<br/>
+&nbsp; &nbsp;  &nbsp;                  [-l CPU_EXTENSION] [-d DEVICE]<br/>
+                                       [--labels LABELS] [-t PROB_THRESHOLD]<br/>
+                                       [-iout IOU_THRESHOLD] [-ni NUMBER_ITER]<br/>
+                                       [-pc] [-r]<br/>
+Options:<br/>
+     -h, --help            Show this help message and exit.<br/>
+     -m MODEL, --model MODEL<br/>
+                        Required. Path to an .xml file with a trained model.<br/>
+  -i INPUT, --input INPUT<br/>
+                        Required. Path to an image/video file. (Specify 'cam'<br/>
+                        to work with camera)<br/>
+  -l CPU_EXTENSION, --cpu_extension CPU_EXTENSION<br/>
+                        Optional. Required for CPU custom layers. Absolute<br/>
+                        path to a shared library with the kernels<br/>
+                        implementations.<br/>
+  -d DEVICE, --device DEVICE<br/>
+                        Optional. Specify the target device to infer on; CPU,<br/>
+                        GPU, FPGA, HDDL or MYRIAD is acceptable. The sample<br/>
+                        will look for a suitable plugin for device specified.<br/>
+                        Default value is CPU<br/>
+  --labels LABELS       Optional. Labels mapping file<br/>
+  -t PROB_THRESHOLD, --prob_threshold PROB_THRESHOLD<br/>
+                        Optional. Probability threshold for detections<br/>
+                        filtering<br/>
+  -iout IOU_THRESHOLD, --iou_threshold IOU_THRESHOLD<br/>
+                        Optional. Intersection over union threshold for<br/>
+                        overlapping detections filtering<br/>
+  -ni NUMBER_ITER, --number_iter NUMBER_ITER<br/>
+                        Optional. Number of inference iterations<br/>
+  -pc, --perf_counts    Optional. Report performance counters<br/>
+  -r, --raw_output_message<br/>
+                        Optional. Output inference results raw values showing<br/>
                         
- file out.mp4 is created and contains the detections
-reference: https://docs.openvinotoolkit.org/latest/_demos_python_demos_object_detection_demo_yolov3_async_README.html
+ file out.mp4 is created and contains the detections<br/>
+reference: https://docs.openvinotoolkit.org/latest/_demos_python_demos_object_detection_demo_yolov3_async_README.html<br/>
