@@ -38,6 +38,8 @@ For this project, we custom trained a YOLOV3 detection model with a six (6) clas
   &nbsp;&nbsp;&nbsp;}<br/>
 ]<br/>
    reference: https://docs.openvinotoolkit.org/latest/_docs_MO_DG_prepare_model_convert_model_tf_specific_Convert_YOLO_From_Tensorflow.html#yolov3-overview<br/>
+link for IR models : https://drive.google.com/open?id=1M1Zb3N6K_sh-lCmEJqj0Hp740xby0jet<br/>
+
 5. Build an inference engine app for  detection<br/>
 the inference was build on two files: inference.py, ship_detection.py<br/>
 ship_detection.py is build on top of yolov3 openvino demo<br/>
