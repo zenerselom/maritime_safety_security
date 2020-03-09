@@ -84,3 +84,7 @@ reference: https://docs.openvinotoolkit.org/latest/_demos_python_demos_object_de
 To do : <br/>
 train a better model with larger dataset 
 implement realtime detection<br/>
+
+
+DEMO VIDEO:<br/>
+[demo_video_0.8_0.4](https://github.com/zenerselom/maritime_safety_security/blob/master/out.mp4) Confidence_threshold = 0.8 and IOU = 0.4
