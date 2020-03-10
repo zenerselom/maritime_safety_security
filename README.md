@@ -87,5 +87,5 @@ implement realtime detection<br/>
 
 
 DEMO VIDEO:<br/>
-[demo_video_0.8_0.4](https://github.com/zenerselom/maritime_safety_security/blob/master/out.mp4) Confidence_threshold = 0.8 and IOU = 0.4
-[demo_video_0.9_0.4](https://github.com/zenerselom/maritime_safety_security/blob/master/out_90_01.mp4) Confidence_threshold = 0.9 and IOU = 0.1
+[demo_video_0.8_0.4](https://github.com/zenerselom/maritime_safety_security/blob/master/out.mp4) Confidence_threshold = 0.8 and IOU = 0.4<br/>
+[demo_video_0.9_0.4](https://github.com/zenerselom/maritime_safety_security/blob/master/out_90_01.mp4) Confidence_threshold = 0.9 and IOU = 0.1<br/>
