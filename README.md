@@ -82,9 +82,10 @@ usage: ship_detection.py [-h] -m MODEL -i INPUT<br/>
  file out.mp4 is created and contains the detections<br/>
 reference: https://docs.openvinotoolkit.org/latest/_demos_python_demos_object_detection_demo_yolov3_async_README.html<br/>
 To do : <br/>
-train a better model with larger dataset 
+train a better model with larger dataset. Due to time constraint and computing ressource, this one were train on 20 epoch (2200 iterations). We are targeting 12000 iterations at least 
 implement realtime detection<br/>
 
 
 DEMO VIDEO:<br/>
 [demo_video_0.8_0.4](https://github.com/zenerselom/maritime_safety_security/blob/master/out.mp4) Confidence_threshold = 0.8 and IOU = 0.4
+[demo_video_0.9_0.4](https://github.com/zenerselom/maritime_safety_security/blob/master/out_90_01.mp4) Confidence_threshold = 0.9 and IOU = 0.1
